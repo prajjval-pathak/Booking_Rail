@@ -22,7 +22,6 @@ const { json } = require('body-parser');
 
 
 const uri =process.env.Mongo_url;
-// mongoose.connect(uri)
 
 mongoose.connect(uri, {
 
@@ -37,14 +36,6 @@ mongoose.connect(uri, {
 
 var db=mongoose.connection;
 
-/*
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
-*/
 
 app.set('views', __dirname + '/public');
 app.engine('html', engine.mustache);
