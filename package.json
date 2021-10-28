@@ -1,0 +1,26 @@
+{
+  "name": "d2c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consolidate": "^0.16.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "mustache": "^4.2.0",
+    "nodemon": "^2.0.14"
+  },
+  "engines": {
+    "node": "14.15.0",
+    "npm": "7.21.0"
+  }
+}

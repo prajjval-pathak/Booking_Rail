@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="booked-seats">
+        <p>hello mr your seat no. is  </p>
+        <p id="has"> </p>
+    </div>
+
+    <div id="seats">
+    </div>
+
+</body>
+<script>
+
+    var wants = "<%=occ%>";
+
+    var booked = 12;
+
+    var need = wants;
+
+    var no = 1;
+
+    var totocc = parseInt(need)+parseInt(booked);
+
+    // console.log(booked+" "+" "+need+" "+ totocc);
+    for(var i=booked; i<totocc; i++){
+    var elem = document.createElement('p');
+    elem.innerText = i;
+    document.getElementById('has').appendChild(elem);
+
+   }
+
+
+    for(var x=0; x<80;x++) {
+
+        
+        var element = document.createElement('button');
+        
+        element.innerText = no;
+
+        if(x<booked){
+            element.style="background-color:red";
+        }
+
+        if(x>=booked && need>0){
+            element.style="background-color:blue";
+            need--;
+        }
+
+
+        document.getElementById('seats').appendChild(element);
+
+        no = no + 1;
+    }
+    
+//    for(var i=booked;i<(wants+booked);i++){
+//     var elem = document.createElement('p');
+//     elem.innerText = i;
+//     document.getElementById('has').appendChild(elem);
+
+//    }
+</script>
+
+</html>
