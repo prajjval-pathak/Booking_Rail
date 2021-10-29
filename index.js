@@ -73,7 +73,8 @@ se = await data.create({seatsNeeded})
   
 
     res.render('booked.ejs',{
-        occ:  seatsNeeded
+        occ:  seatsNeeded,
+        hey:name
     });
 
 })
