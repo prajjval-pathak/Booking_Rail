@@ -1,6 +1,3 @@
-/*
-https://bookseats.herokuapp.com/
-*/
 
 
 const express = require('express');
